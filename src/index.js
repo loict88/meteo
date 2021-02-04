@@ -1,12 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import 'reset-css';
+import './index.scss';
+import Meteo from './components/Meteo';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Meteo city={"Troyes"} code={"13000"} />
+    <Meteo city={"Paris"} code={"75001"} />
+    <Meteo city={"Le plessis-trevise"} code={"94420"} />
   </React.StrictMode>,
   document.getElementById('root')
 );
